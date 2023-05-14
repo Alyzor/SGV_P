@@ -9,13 +9,13 @@ using MySql.Data.MySqlClient;
 
 namespace SGV_P.Classes
 {
-    internal class CRUD
+    internal class Classes
     {
         public class Clientes
         {
             public int id { get; set; }
             public string nome { get; set; }
-            public string DataNasc { get; set; }
+            public DateTime DataNasc { get; set; }
             public string Email { get; set; }
             public string Telm { get; set; }
             public string NIF { get; set; }
@@ -41,7 +41,7 @@ namespace SGV_P.Classes
             public int idVenda { get; set; }
             public int idProduto { get; set; }
             public int Quantidade { get; set; }
-            
+
         }
         public class Encomendas
         {
@@ -57,7 +57,6 @@ namespace SGV_P.Classes
             public int idEncomenda { get; set; }
             public int idProduto { get; set; }
             public int Quantidade { get; set; }
-            
         }
         public class Produtos
         {
@@ -67,24 +66,6 @@ namespace SGV_P.Classes
             public int Stock { get; set; }
             public decimal Preco { get; set; }
             public int idFornecedor { get; set; }
-        }
-        public static string GetConnection()
-        {
-            try
-            {
-                
-            
-            string connectionString = "datasource=localhost;port=3306;username=root";
-            MySqlConnection con = new MySqlConnection(connectionString);
-                string query = "Use Database sgvdb;";
-                query += "Select * from ";
-                con.Open();
-            }
-            catch (Exception ex)
-            {
-                return "no " + ex;
-            }
-
         }
     }
 }
