@@ -85,7 +85,7 @@
             this.btnDelCliente.UseVisualStyleBackColor = true;
             this.btnDelCliente.Click += new System.EventHandler(this.btnDelCliente_Click);
             // 
-            // Form1
+            // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,8 +95,9 @@
             this.Controls.Add(this.btnCriarCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Name = "FrmCliente";
             this.Text = "Form1";
+            this.Activated += new System.EventHandler(this.FrmCliente_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

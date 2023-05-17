@@ -86,7 +86,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes.cs" />
+    <Compile Include="Classes\EncomendasDetalhes.cs" />
+    <Compile Include="Classes\Fornecedores.cs" />
+    <Compile Include="Classes\Vendas.cs" />
+    <Compile Include="Classes\Encomendas.cs" />
+    <Compile Include="Classes\VendasDetalhes.cs" />
+    <Compile Include="Classes\Clientes.cs" />
+    <Compile Include="Classes\Produtos.cs" />
     <Compile Include="MySqlDAO.cs" />
     <Compile Include="View\FrmCliente.cs">
       <SubType>Form</SubType>

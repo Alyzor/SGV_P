@@ -41,15 +41,29 @@ namespace SGV_P
         private void btnCriarCliente_Click(object sender, EventArgs e)
         {
             
-            SGV_P.View.FrmEditCliente frmEditCliente = new FrmEditCliente();
-            frmEditCliente.OpType = "Create";
+            SGV_P.View.FrmEditCliente frmEditCliente = new FrmEditCliente("Create");
             frmEditCliente.ShowDialog();
         }
 
         private void btnModCliente_Click(object sender, EventArgs e)
         {
-            SGV_P.View.FrmEditCliente frmEditCliente = new FrmEditCliente();
-            frmEditCliente.OpType = "Mod";
+            SGV_P.View.FrmEditCliente frmEditCliente = new FrmEditCliente("Mod");
+            if (dataGridView1.CurrentRow.Index != null)
+            {
+            int rowClicked = dataGridView1.CurrentRow.Index;
+            int id = (int)dataGridView1.Rows[rowClicked].Cells[0].Value;
+
+                List<Clientes> ListaC = new MySqlDAO().getClientes();
+
+                foreach(Clientes Cliente in ListaC)
+                {
+                    if (Cliente.id == id)
+                    {
+                        frmEditCliente.getCliente = Cliente;
+                    }
+                }
+            }
+
             frmEditCliente.ShowDialog();
         }
 
@@ -70,6 +84,11 @@ namespace SGV_P
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
+
+        private void FrmCliente_Activated(object sender, EventArgs e)
+        {
+            ListClientes();
         }
     }
 }
