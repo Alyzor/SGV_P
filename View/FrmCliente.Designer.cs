@@ -38,19 +38,33 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 83);
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dataGridView1.Location = new System.Drawing.Point(14, 96);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 355);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(906, 410);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(14, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 25);
             this.label1.TabIndex = 1;
@@ -58,12 +72,17 @@
             // 
             // btnCriarCliente
             // 
-            this.btnCriarCliente.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnCriarCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCriarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.btnCriarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCriarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.btnCriarCliente.Location = new System.Drawing.Point(12, 37);
+            this.btnCriarCliente.Location = new System.Drawing.Point(14, 43);
+            this.btnCriarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCriarCliente.MaximumSize = new System.Drawing.Size(88, 46);
             this.btnCriarCliente.Name = "btnCriarCliente";
-            this.btnCriarCliente.Size = new System.Drawing.Size(75, 40);
+            this.btnCriarCliente.Size = new System.Drawing.Size(88, 46);
             this.btnCriarCliente.TabIndex = 2;
             this.btnCriarCliente.Text = "Criar Cliente";
             this.btnCriarCliente.UseVisualStyleBackColor = false;
@@ -71,12 +90,17 @@
             // 
             // btnModCliente
             // 
-            this.btnModCliente.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnModCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnModCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.btnModCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.btnModCliente.Location = new System.Drawing.Point(93, 37);
+            this.btnModCliente.Location = new System.Drawing.Point(108, 43);
+            this.btnModCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModCliente.MaximumSize = new System.Drawing.Size(88, 46);
             this.btnModCliente.Name = "btnModCliente";
-            this.btnModCliente.Size = new System.Drawing.Size(75, 40);
+            this.btnModCliente.Size = new System.Drawing.Size(88, 46);
             this.btnModCliente.TabIndex = 3;
             this.btnModCliente.Text = "Modificar";
             this.btnModCliente.UseVisualStyleBackColor = false;
@@ -84,12 +108,17 @@
             // 
             // btnDelCliente
             // 
-            this.btnDelCliente.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnDelCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.btnDelCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.btnDelCliente.Location = new System.Drawing.Point(174, 37);
+            this.btnDelCliente.Location = new System.Drawing.Point(203, 43);
+            this.btnDelCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelCliente.MaximumSize = new System.Drawing.Size(88, 46);
             this.btnDelCliente.Name = "btnDelCliente";
-            this.btnDelCliente.Size = new System.Drawing.Size(75, 40);
+            this.btnDelCliente.Size = new System.Drawing.Size(88, 46);
             this.btnDelCliente.TabIndex = 4;
             this.btnDelCliente.Text = "Apagar";
             this.btnDelCliente.UseVisualStyleBackColor = false;
@@ -97,15 +126,18 @@
             // 
             // FrmCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Salmon;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(176)))), ((int)(((byte)(177)))));
+            this.ClientSize = new System.Drawing.Size(934, 519);
             this.Controls.Add(this.btnDelCliente);
             this.Controls.Add(this.btnModCliente);
             this.Controls.Add(this.btnCriarCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmCliente";
             this.Text = "Form1";
             this.Activated += new System.EventHandler(this.FrmCliente_Activated);

@@ -94,6 +94,12 @@
     <Compile Include="Classes\Clientes.cs" />
     <Compile Include="Classes\Produtos.cs" />
     <Compile Include="MySqlDAO.cs" />
+    <Compile Include="SideBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SideBar.Designer.cs">
+      <DependentUpon>SideBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     <Compile Include="View\FrmEditCliente.Designer.cs">
       <DependentUpon>FrmEditCliente.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SideBar.resx">
+      <DependentUpon>SideBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4372750.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
