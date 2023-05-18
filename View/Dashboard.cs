@@ -14,6 +14,7 @@ namespace SGV_P.View
 {
     public partial class Dashboard : Form
     {
+        int tick = 0;
         bool sBarOpen = false;
         public Dashboard()
         {
@@ -38,6 +39,8 @@ namespace SGV_P.View
         {
             if(sBarOpen)
             {
+                panBlur.BackColor = Color.FromArgb(tick, Color.Black);
+                tick = tick -10;
                 panSideB.Width -= 25;
                 if(panSideB.Width <125)
                 {
@@ -45,12 +48,18 @@ namespace SGV_P.View
                 }    
                 if (panSideB.Width == panSideB.MinimumSize.Width)
                 {
+                    panBlur.Visible = false;
+                    panBlur.Enabled = false;
                     sBarOpen = false;
                     timer1.Stop();
                 }
             }
             else
             {
+                panBlur.BackColor = Color.FromArgb(tick, Color.Black);
+                tick=tick+10;
+                panBlur.Visible = true;
+                panBlur.Enabled = true;
                 panSideB.Width += 25;
                 if (panSideB.Width > 125)
                 {
@@ -62,6 +71,11 @@ namespace SGV_P.View
                     timer1.Stop();
                 }
             }
+        }
+
+        private void panBlur_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
         }
     }
 }

@@ -30,24 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panChildForm = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnSideB = new System.Windows.Forms.PictureBox();
             this.panSideB = new System.Windows.Forms.Panel();
-            this.panClientes = new System.Windows.Forms.Panel();
-            this.panEncom = new System.Windows.Forms.Panel();
-            this.panFornece = new System.Windows.Forms.Panel();
-            this.panProds = new System.Windows.Forms.Panel();
-            this.panVendas = new System.Windows.Forms.Panel();
             this.panExit = new System.Windows.Forms.Panel();
+            this.panFornece = new System.Windows.Forms.Panel();
+            this.panVendas = new System.Windows.Forms.Panel();
+            this.panProds = new System.Windows.Forms.Panel();
+            this.panEncom = new System.Windows.Forms.Panel();
+            this.panClientes = new System.Windows.Forms.Panel();
+            this.btnSideB = new System.Windows.Forms.PictureBox();
+            this.panBlur = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panChildForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSideB)).BeginInit();
             this.panSideB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSideB)).BeginInit();
             this.SuspendLayout();
             // 
             // panChildForm
             // 
             this.panChildForm.BackColor = System.Drawing.Color.Salmon;
             this.panChildForm.Controls.Add(this.panSideB);
+            this.panChildForm.Controls.Add(this.panBlur);
             this.panChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panChildForm.ForeColor = System.Drawing.Color.Transparent;
             this.panChildForm.Location = new System.Drawing.Point(0, 0);
@@ -55,23 +57,6 @@
             this.panChildForm.Size = new System.Drawing.Size(1280, 720);
             this.panChildForm.TabIndex = 0;
             this.panChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panChildForm_Paint);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnSideB
-            // 
-            this.btnSideB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSideB.Image = global::SGV_P.Properties.Resources.menu;
-            this.btnSideB.Location = new System.Drawing.Point(0, 0);
-            this.btnSideB.Name = "btnSideB";
-            this.btnSideB.Size = new System.Drawing.Size(75, 75);
-            this.btnSideB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnSideB.TabIndex = 1;
-            this.btnSideB.TabStop = false;
-            this.btnSideB.Click += new System.EventHandler(this.btnSideB_Click);
             // 
             // panSideB
             // 
@@ -90,19 +75,13 @@
             this.panSideB.Size = new System.Drawing.Size(75, 720);
             this.panSideB.TabIndex = 1;
             // 
-            // panClientes
+            // panExit
             // 
-            this.panClientes.Location = new System.Drawing.Point(0, 107);
-            this.panClientes.Name = "panClientes";
-            this.panClientes.Size = new System.Drawing.Size(250, 75);
-            this.panClientes.TabIndex = 2;
-            // 
-            // panEncom
-            // 
-            this.panEncom.Location = new System.Drawing.Point(0, 537);
-            this.panEncom.Name = "panEncom";
-            this.panEncom.Size = new System.Drawing.Size(250, 75);
-            this.panEncom.TabIndex = 3;
+            this.panExit.BackColor = System.Drawing.Color.Red;
+            this.panExit.Location = new System.Drawing.Point(0, 645);
+            this.panExit.Name = "panExit";
+            this.panExit.Size = new System.Drawing.Size(250, 75);
+            this.panExit.TabIndex = 4;
             // 
             // panFornece
             // 
@@ -111,13 +90,6 @@
             this.panFornece.Size = new System.Drawing.Size(250, 75);
             this.panFornece.TabIndex = 3;
             // 
-            // panProds
-            // 
-            this.panProds.Location = new System.Drawing.Point(0, 430);
-            this.panProds.Name = "panProds";
-            this.panProds.Size = new System.Drawing.Size(250, 75);
-            this.panProds.TabIndex = 3;
-            // 
             // panVendas
             // 
             this.panVendas.Location = new System.Drawing.Point(0, 322);
@@ -125,13 +97,53 @@
             this.panVendas.Size = new System.Drawing.Size(250, 75);
             this.panVendas.TabIndex = 3;
             // 
-            // panExit
+            // panProds
             // 
-            this.panExit.BackColor = System.Drawing.Color.Red;
-            this.panExit.Location = new System.Drawing.Point(0, 645);
-            this.panExit.Name = "panExit";
-            this.panExit.Size = new System.Drawing.Size(250, 75);
-            this.panExit.TabIndex = 4;
+            this.panProds.Location = new System.Drawing.Point(0, 430);
+            this.panProds.Name = "panProds";
+            this.panProds.Size = new System.Drawing.Size(250, 75);
+            this.panProds.TabIndex = 3;
+            // 
+            // panEncom
+            // 
+            this.panEncom.Location = new System.Drawing.Point(0, 537);
+            this.panEncom.Name = "panEncom";
+            this.panEncom.Size = new System.Drawing.Size(250, 75);
+            this.panEncom.TabIndex = 3;
+            // 
+            // panClientes
+            // 
+            this.panClientes.Location = new System.Drawing.Point(0, 107);
+            this.panClientes.Name = "panClientes";
+            this.panClientes.Size = new System.Drawing.Size(250, 75);
+            this.panClientes.TabIndex = 2;
+            // 
+            // btnSideB
+            // 
+            this.btnSideB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSideB.Image = global::SGV_P.Properties.Resources.menu;
+            this.btnSideB.Location = new System.Drawing.Point(0, 0);
+            this.btnSideB.Name = "btnSideB";
+            this.btnSideB.Size = new System.Drawing.Size(75, 75);
+            this.btnSideB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSideB.TabIndex = 1;
+            this.btnSideB.TabStop = false;
+            this.btnSideB.Click += new System.EventHandler(this.btnSideB_Click);
+            // 
+            // panBlur
+            // 
+            this.panBlur.BackColor = System.Drawing.Color.Transparent;
+            this.panBlur.Location = new System.Drawing.Point(0, 0);
+            this.panBlur.Name = "panBlur";
+            this.panBlur.Size = new System.Drawing.Size(1280, 720);
+            this.panBlur.TabIndex = 2;
+            this.panBlur.Visible = false;
+            this.panBlur.Click += new System.EventHandler(this.panBlur_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Dashboard
             // 
@@ -144,8 +156,8 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panChildForm.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnSideB)).EndInit();
             this.panSideB.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnSideB)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -162,5 +174,6 @@
         private System.Windows.Forms.Panel panEncom;
         private System.Windows.Forms.Panel panClientes;
         private System.Windows.Forms.Panel panExit;
+        private System.Windows.Forms.Panel panBlur;
     }
 }
