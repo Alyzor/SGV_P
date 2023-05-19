@@ -47,7 +47,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonShadow;
             this.dataGridView1.Location = new System.Drawing.Point(14, 96);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -79,7 +79,7 @@
             this.btnCriarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCriarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.btnCriarCliente.Location = new System.Drawing.Point(14, 43);
-            this.btnCriarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCriarCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnCriarCliente.MaximumSize = new System.Drawing.Size(88, 46);
             this.btnCriarCliente.Name = "btnCriarCliente";
             this.btnCriarCliente.Size = new System.Drawing.Size(88, 46);
@@ -97,7 +97,7 @@
             this.btnModCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.btnModCliente.Location = new System.Drawing.Point(108, 43);
-            this.btnModCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnModCliente.MaximumSize = new System.Drawing.Size(88, 46);
             this.btnModCliente.Name = "btnModCliente";
             this.btnModCliente.Size = new System.Drawing.Size(88, 46);
@@ -115,7 +115,7 @@
             this.btnDelCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.btnDelCliente.Location = new System.Drawing.Point(203, 43);
-            this.btnDelCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelCliente.MaximumSize = new System.Drawing.Size(88, 46);
             this.btnDelCliente.Name = "btnDelCliente";
             this.btnDelCliente.Size = new System.Drawing.Size(88, 46);
@@ -137,7 +137,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCliente";
             this.Text = "Form1";
             this.Activated += new System.EventHandler(this.FrmCliente_Activated);

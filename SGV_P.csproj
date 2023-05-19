@@ -94,17 +94,17 @@
     <Compile Include="Classes\Clientes.cs" />
     <Compile Include="Classes\Produtos.cs" />
     <Compile Include="MySqlDAO.cs" />
-    <Compile Include="SideBar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SideBar.Designer.cs">
-      <DependentUpon>SideBar.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmEncomendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmEncomendas.Designer.cs">
+      <DependentUpon>FrmEncomendas.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmCliente.cs">
       <SubType>Form</SubType>
@@ -120,9 +120,36 @@
     <Compile Include="View\FrmEditCliente.Designer.cs">
       <DependentUpon>FrmEditCliente.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SideBar.resx">
-      <DependentUpon>SideBar.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="View\FrmFornecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmFornecs.Designer.cs">
+      <DependentUpon>FrmFornecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmFuncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmFuncs.Designer.cs">
+      <DependentUpon>FrmFuncs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmHome.Designer.cs">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmProds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmProds.Designer.cs">
+      <DependentUpon>FrmProds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmVendas.Designer.cs">
+      <DependentUpon>FrmVendas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +168,21 @@
     </Compile>
     <EmbeddedResource Include="View\FrmEditCliente.resx">
       <DependentUpon>FrmEditCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmEncomendas.resx">
+      <DependentUpon>FrmEncomendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmFornecs.resx">
+      <DependentUpon>FrmFornecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmFuncs.resx">
+      <DependentUpon>FrmFuncs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmHome.resx">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmProds.resx">
+      <DependentUpon>FrmProds.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -164,6 +206,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\4372750.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

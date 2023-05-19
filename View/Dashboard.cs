@@ -13,8 +13,6 @@ namespace SGV_P.View
 {
     public partial class Dashboard : Form
     {
-        
-        int tick = 0;
         bool sBarOpen = false;
         private Form _openForm;
         
@@ -41,7 +39,7 @@ namespace SGV_P.View
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            abrirForm(new FrmCliente());
+            abrirForm(new FrmHome());
         }
 
         private void panChildForm_Paint(object sender, PaintEventArgs e)
@@ -49,34 +47,105 @@ namespace SGV_P.View
 
         }
 
-        private void sideBar1_MouseEnter(object sender, EventArgs e)
-        {
-            timer1.Start();
-        }
-        private void sideBar1_MouseLeave(object sender, EventArgs e)
-        {
-            timer1.Start();
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(sBarOpen)
+            if (sBarOpen)
             {
-                sideBar1.Width -= 25;
-                if (sideBar1.Width == sideBar1.MinimumSize.Width)
+                panSBar.Width -= 25;
+                if (panSBar.Width < 125)
                 {
-                    timer1.Stop();
-                    sBarOpen = false;
+                    btnSideB.Image = Resources.menu;
                 }
+                if (panSBar.Width == panSBar.MinimumSize.Width)
+                {
+                    sBarOpen = false;
+                    timer1.Stop();
+                    panChildForm.Enabled = true;
+                }
+
             }
             else
             {
-                sideBar1.Width += 25;
-                if (sideBar1.Width == sideBar1.MaximumSize.Width)
+                panSBar.Width+= 25;
+                if (panSBar.Width > 125)
                 {
-                    timer1.Stop();
-                    sBarOpen = true;
+                    btnSideB.Image = Resources.fechar;
                 }
+                if(panSBar.Width == panSBar.MaximumSize.Width)
+                {
+                    sBarOpen = true;
+                    timer1.Stop();
+                    panChildForm.Enabled = false;
+                }
+            }
+        }
+
+        private void btnSideB_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+        //clientes_Click
+        private void Clientes_Click(object sender, EventArgs e)
+        {
+            if(sBarOpen)
+            {
+                abrirForm(new FrmCliente());
+                timer1.Start();
+            }
+        }
+        private void Funcionarios_Click(object sender, EventArgs e)
+        {
+            if (sBarOpen)
+            {
+                abrirForm(new FrmFuncs());
+                timer1.Start();
+            }
+        }
+        private void Fornecedores_Click(object sender, EventArgs e)
+        {
+            if (sBarOpen)
+            {
+                abrirForm(new FrmFornecs());
+                timer1.Start();
+            }
+        }
+        private void Vendas_Click(object sender, EventArgs e)
+        {
+            if (sBarOpen)
+            {
+                abrirForm(new FrmVendas());
+                timer1.Start();
+            }
+        }
+        private void Encomendas_Click(object sender, EventArgs e)
+        {
+            if (sBarOpen)
+            {
+                abrirForm(new FrmEncomendas());
+                timer1.Start();
+            }
+        }
+        private void Produtos_Click(object sender, EventArgs e)
+        {
+            if (sBarOpen)
+            {
+                abrirForm(new FrmProds());
+                timer1.Start();
+            }
+        }
+        private void Close_Click(object sender, EventArgs e)
+        {
+            if (sBarOpen)
+            {
+                Application.Exit();
+            }
+        }
+        private void Home_Click(object sender, EventArgs e)
+        {
+            if (sBarOpen)
+            {
+                abrirForm(new FrmHome());
+                timer1.Start();
             }
         }
     }

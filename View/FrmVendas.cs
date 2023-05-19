@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SGV_P
+namespace SGV_P.View
 {
-    public partial class SideBar : UserControl
+    public partial class FrmVendas : Form
     {
-        private bool _sideBarOpen = false;
-        public SideBar()
+        public FrmVendas()
         {
             InitializeComponent();
         }
-    }   
+    }
 }
