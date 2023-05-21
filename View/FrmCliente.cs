@@ -43,6 +43,7 @@ namespace SGV_P
             
             SGV_P.View.FrmEditCliente frmEditCliente = new FrmEditCliente("Create");
             frmEditCliente.ShowDialog();
+            
         }
 
         private void btnModCliente_Click(object sender, EventArgs e)

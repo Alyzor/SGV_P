@@ -40,8 +40,8 @@
             this.txtMorada = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.dtpDataNasc = new System.Windows.Forms.DateTimePicker();
-            this.txtNIF = new System.Windows.Forms.MaskedTextBox();
-            this.txtTelm = new System.Windows.Forms.MaskedTextBox();
+            this.txtNIF = new System.Windows.Forms.TextBox();
+            this.txtTelm = new System.Windows.Forms.TextBox();
             label5 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
@@ -142,6 +142,7 @@
             // txtMorada
             // 
             this.txtMorada.Location = new System.Drawing.Point(106, 107);
+            this.txtMorada.MaxLength = 50;
             this.txtMorada.Name = "txtMorada";
             this.txtMorada.Size = new System.Drawing.Size(238, 20);
             this.txtMorada.TabIndex = 3;
@@ -149,6 +150,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(106, 133);
+            this.txtEmail.MaxLength = 40;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(238, 20);
             this.txtEmail.TabIndex = 4;
@@ -162,19 +164,19 @@
             // 
             // txtNIF
             // 
-            this.txtNIF.Location = new System.Drawing.Point(106, 80);
-            this.txtNIF.Mask = "000000000";
+            this.txtNIF.Location = new System.Drawing.Point(106, 81);
+            this.txtNIF.MaxLength = 9;
             this.txtNIF.Name = "txtNIF";
             this.txtNIF.Size = new System.Drawing.Size(238, 20);
-            this.txtNIF.TabIndex = 2;
+            this.txtNIF.TabIndex = 24;
             // 
             // txtTelm
             // 
-            this.txtTelm.Location = new System.Drawing.Point(106, 161);
-            this.txtTelm.Mask = "000000000";
+            this.txtTelm.Location = new System.Drawing.Point(106, 162);
+            this.txtTelm.MaxLength = 9;
             this.txtTelm.Name = "txtTelm";
             this.txtTelm.Size = new System.Drawing.Size(238, 20);
-            this.txtTelm.TabIndex = 5;
+            this.txtTelm.TabIndex = 25;
             // 
             // FrmEditCliente
             // 
@@ -211,7 +213,7 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.DateTimePicker dtpDataNasc;
         private System.Windows.Forms.Label labelNome;
-        private System.Windows.Forms.MaskedTextBox txtNIF;
-        private System.Windows.Forms.MaskedTextBox txtTelm;
+        private System.Windows.Forms.TextBox txtNIF;
+        private System.Windows.Forms.TextBox txtTelm;
     }
 }

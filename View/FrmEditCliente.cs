@@ -75,11 +75,13 @@ namespace SGV_P.View
             {
                 case "Create":
                     MySqlDAO.newCliente(NovoCli);
+                    (System.Windows.Forms.Application.OpenForms["FrmCliente"] as FrmCliente).ListClientes();
                     this.Close();
                     break;
                 case "Mod":
                     NovoCli.id = getCliente.id;
                     MySqlDAO.modCliente(NovoCli);
+                    (System.Windows.Forms.Application.OpenForms["FrmCliente"] as FrmCliente).ListClientes();
                     this.Close();
                     break;
 
