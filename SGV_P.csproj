@@ -88,6 +88,7 @@
   <ItemGroup>
     <Compile Include="Classes\EncomendasDetalhes.cs" />
     <Compile Include="Classes\Fornecedores.cs" />
+    <Compile Include="Classes\Funcs.cs" />
     <Compile Include="Classes\Vendas.cs" />
     <Compile Include="Classes\Encomendas.cs" />
     <Compile Include="Classes\VendasDetalhes.cs" />

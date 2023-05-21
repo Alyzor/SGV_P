@@ -89,5 +89,30 @@ namespace SGV_P.Classes
                 connection.Close();
             }
         }
+
+        public List<Funcs> getFuncs()
+        {
+            List<Funcs> ListFunc = new List<Funcs>();
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            connection.Open();
+
+            string Query = "SELECT * FROM funcionarios";
+            MySqlCommand cmd = new MySqlCommand(Query, connection);
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                Funcs func = new Funcs();
+                func.id = Convert.ToInt32(dataReader["id"]);
+                func.Nome = Convert.ToString(dataReader["Nome"]);
+                func.NIF = Convert.ToString(dataReader["NIF"]);
+                func.Telem = Convert.ToString(dataReader["Telem"]);
+                func.Morada = Convert.ToString(dataReader["Morada"]);
+                func.Adm = Convert.ToBoolean(dataReader["Adm"]);
+                ListFunc.Add(func);
+            }
+            connection.Close();
+            return ListFunc;
+        }
     }
 }
