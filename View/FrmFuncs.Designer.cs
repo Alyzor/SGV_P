@@ -45,13 +45,14 @@
             this.btnDelFunc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.btnDelFunc.Location = new System.Drawing.Point(236, 48);
-            this.btnDelFunc.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnDelFunc.Margin = new System.Windows.Forms.Padding(5);
             this.btnDelFunc.MaximumSize = new System.Drawing.Size(103, 53);
             this.btnDelFunc.Name = "btnDelFunc";
             this.btnDelFunc.Size = new System.Drawing.Size(103, 53);
             this.btnDelFunc.TabIndex = 9;
             this.btnDelFunc.Text = "Apagar";
             this.btnDelFunc.UseVisualStyleBackColor = false;
+            this.btnDelFunc.Click += new System.EventHandler(this.btnDelFunc_Click);
             // 
             // btnModFunc
             // 
@@ -62,13 +63,14 @@
             this.btnModFunc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.btnModFunc.Location = new System.Drawing.Point(125, 48);
-            this.btnModFunc.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnModFunc.Margin = new System.Windows.Forms.Padding(5);
             this.btnModFunc.MaximumSize = new System.Drawing.Size(103, 53);
             this.btnModFunc.Name = "btnModFunc";
             this.btnModFunc.Size = new System.Drawing.Size(103, 53);
             this.btnModFunc.TabIndex = 8;
             this.btnModFunc.Text = "Modificar";
             this.btnModFunc.UseVisualStyleBackColor = false;
+            this.btnModFunc.Click += new System.EventHandler(this.btnModFunc_Click);
             // 
             // btnCriarFunc
             // 
@@ -79,13 +81,14 @@
             this.btnCriarFunc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCriarFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.btnCriarFunc.Location = new System.Drawing.Point(15, 48);
-            this.btnCriarFunc.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCriarFunc.Margin = new System.Windows.Forms.Padding(5);
             this.btnCriarFunc.MaximumSize = new System.Drawing.Size(103, 53);
             this.btnCriarFunc.Name = "btnCriarFunc";
             this.btnCriarFunc.Size = new System.Drawing.Size(103, 53);
             this.btnCriarFunc.TabIndex = 7;
             this.btnCriarFunc.Text = "Criar Funcionário";
             this.btnCriarFunc.UseVisualStyleBackColor = false;
+            this.btnCriarFunc.Click += new System.EventHandler(this.btnCriarFunc_Click);
             // 
             // label1
             // 
@@ -113,7 +116,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonShadow;
             this.dataGridView1.Location = new System.Drawing.Point(15, 110);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -136,6 +139,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmFuncs";
             this.Text = "FrmFuncs";
+            this.Activated += new System.EventHandler(this.FrmFuncs_Activated);
             this.Load += new System.EventHandler(this.FrmFuncs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

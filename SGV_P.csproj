@@ -101,6 +101,12 @@
     <Compile Include="View\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmEditFuncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmEditFuncs.Designer.cs">
+      <DependentUpon>FrmEditFuncs.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmEncomendas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmFornecs.resx">
       <DependentUpon>FrmFornecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmEditFuncs.resx">
+      <DependentUpon>FrmEditFuncs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmFuncs.resx">
       <DependentUpon>FrmFuncs.cs</DependentUpon>
