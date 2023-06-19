@@ -9,7 +9,7 @@ namespace SGV_P.Classes
 {
     internal class MySqlDAO
     {
-        static string connectionString = "datasource=141.145.194.186;port=3306;username=root;database=SGVPP;password=7X0a2_B4Z4o!";
+        static string connectionString = "SENSITIVE INFO";
 
 
         //clientes
